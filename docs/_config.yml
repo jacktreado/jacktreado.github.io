@@ -36,10 +36,6 @@ remote_theme: christianezeani/panthera-jekyll
 plugins:
   - jekyll-feed
 
-# Include CSS.
-stylesheets:
-  - assets/css/academicons.min.css
-
 left_side:
   background_image: "docs/imgs/cellHeader.png"
   background_color: "#1E1EFF"
