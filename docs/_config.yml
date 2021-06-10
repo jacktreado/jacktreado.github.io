@@ -36,16 +36,28 @@ remote_theme: christianezeani/panthera-jekyll
 plugins:
   - jekyll-feed
 
+# Include CSS.
+stylesheets:
+  - assets/css/academicons.min.css
+
 left_side:
   background_image: "docs/imgs/cellHeader.png"
-  background_color: "#009180"
+  background_color: "#1E1EFF"
   close_button_color: "#C8FFFF"
   text_color: "#FFFFFF"
 
 social_icons:
+  - name: email
+    link: mailto:john.treado@yale.edu
+    icon: far fa-envelope
+
   - name: github
     link: https://github.com/jacktreado
     icon: fab fa-github-square
+
+  - name: google scholar
+    link: https://scholar.google.com/citations?user=2WGEh-AAAAAJ&hl=en
+    icon: ai ai-google-scholar-square ai-3x 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
