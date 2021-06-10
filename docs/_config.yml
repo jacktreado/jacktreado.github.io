@@ -32,9 +32,20 @@ twitter_username: ""
 github_username: jacktreado
 
 # Build settings
-theme: cayman
+remote_theme: christianezeani/panthera-jekyll
 plugins:
   - jekyll-feed
+
+left_side:
+  background_image: "./imgs/cellHeader.png"
+  background_color: "#009180"
+  close_button_color: "#C8FFFF"
+  text_color: "#FFFFFF"
+
+social_icons:
+  - name: github
+    link: https://github.com/jacktreado
+    icon: fab fa-github-square
 
 # Exclude from processing.
 # The following items will not be processed, by default.
