@@ -32,8 +32,8 @@ plugins:
   - jekyll-feed
 
 left_side:
-  background_image: "imgs/cellHeader.png"
-  background_color: "#1E1EFF"
+  background_image: "imgs/cellHeader2.png"
+  background_color: "#5fa666"
   close_button_color: "#C8FFFF"
   text_color: "#FFFFFF"
 
