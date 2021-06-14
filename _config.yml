@@ -32,7 +32,7 @@ plugins:
   - jekyll-feed
 
 left_side:
-  background_image: "imgs/cellHeader2.png"
+  background_image: "imgs/cellHeader4.png"
   background_color: "#5fa666"
   close_button_color: "#C8FFFF"
   text_color: "#FFFFFF"
@@ -48,7 +48,12 @@ social_icons:
 
   - name: google scholar
     link: https://scholar.google.com/citations?user=2WGEh-AAAAAJ&hl=en
-    icon: ai ai-google-scholar-square ai-3x 
+    icon: ai ai-google-scholar-square ai-3x
+
+menu:
+  - text: Publications
+    link: /publications
+    icon: ""
 
 # Exclude from processing.
 # The following items will not be processed, by default.
