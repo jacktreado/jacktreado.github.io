@@ -11,3 +11,5 @@ layout: default
 I am currently a graduate student in [Corey O'Hern's](https://jamming.research.yale.edu/) group at Yale. I study collective cell motion, tissue organization and tissue mechanics using mostly computational tools. 
 
 I also go by Jack, but publish by my given name (John. D Treado). Sorry for any confusion!
+
+For any inquiries, please email me at [john.treado@yale.edu](mailto:john.treado@yale.edu). 
