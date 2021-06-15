@@ -34,7 +34,7 @@ plugins:
 left_side:
   background_image: "imgs/cellHeader4.png"
   background_color: "#5fa666"
-  close_button_color: "#C8FFFF"
+  close_button_color: "#5fa666"
   text_color: "#000000"
 
 social_icons:
