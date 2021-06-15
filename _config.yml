@@ -35,7 +35,7 @@ left_side:
   background_image: "imgs/cellHeader4.png"
   background_color: "#5fa666"
   close_button_color: "#C8FFFF"
-  text_color: "#FFFFFF"
+  text_color: "#000000"
 
 social_icons:
   - name: email
