@@ -32,10 +32,10 @@ plugins:
   - jekyll-feed
 
 left_side:
-  background_image: "imgs/cellHeader4.png"
+  background_image: "imgs/cellHeader5.png"
   background_color: "#5fa666"
   close_button_color: "#5fa666"
-  text_color: "#000000"
+  text_color: "#FFFFFF"
 
 social_icons:
   - name: email
