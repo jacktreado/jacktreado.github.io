@@ -1,7 +1,9 @@
 ---
 ---
-
 @import "panthera-jekyll";
+body {
+  font-family: '{{ site.fonts.primary }}','{{ site.fonts.secondary }}',Helvetica,sans-serif;
+}
 @font-face {
     font-family: 'Academicons';
     font-style: normal;
