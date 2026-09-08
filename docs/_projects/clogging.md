@@ -1,6 +1,6 @@
 ---
 title: Clogging of deformable particles
-order: 4
+order: 5
 kicker: Flow & confinement
 layout: project
 hero_layout: split

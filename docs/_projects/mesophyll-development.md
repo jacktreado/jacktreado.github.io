@@ -1,6 +1,6 @@
 ---
 title: Mesophyll development
-order: 1
+order: 3
 kicker: 2022 · Morphogenesis
 layout: project
 hero_layout: split            # or: stacked, for a full-bleed hero

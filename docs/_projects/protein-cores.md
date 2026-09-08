@@ -1,6 +1,6 @@
 ---
 title: Jamming in globular protein cores
-order: 3
+order: 5
 kicker: Protein structure
 layout: project
 hero_layout: split
