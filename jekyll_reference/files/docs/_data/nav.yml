@@ -1,0 +1,12 @@
+- title: About
+  url: /#about
+  section: home
+- title: Research
+  url: /research/
+  section: research
+- title: Publications
+  url: /publications/
+  section: publications
+- title: Contact
+  url: /#contact
+  section: home

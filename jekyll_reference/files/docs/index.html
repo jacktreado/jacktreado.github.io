@@ -50,7 +50,7 @@ description: Research website
         {% assign featured = site.projects | sort: 'order' %}
         {% if featured.size > 0 %}
             <ul class="jt-grid jt-grid--roomy">
-                {% for project in featured %}
+                {% for project in featured limit: 3 %}
                     {% include project-card.html project=project %}
                 {% endfor %}
             </ul>

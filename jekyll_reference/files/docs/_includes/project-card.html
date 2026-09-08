@@ -1,0 +1,26 @@
+{% comment %}
+  _includes/project-card.html
+  Usage: {% include project-card.html project=item %}
+  Resting state is the poster frame; the clip plays on hover/focus (desktop only,
+  wired in redesign.js). On touch the whole card is just a link — tap navigates.
+{% endcomment %}
+{% assign p = include.project %}
+<li>
+  <a class="jt-card" href="{{ p.url | relative_url }}" data-thumb>
+    <div class="jt-card__media">
+      {% if p.thumb_video %}
+        <video src="{{ p.thumb_video | relative_url }}"
+               poster="{{ p.thumb_poster | relative_url }}"
+               width="{{ p.thumb_width }}" height="{{ p.thumb_height }}"
+               muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video>
+        <span class="jt-card__cue">loops on hover</span>
+      {% else %}
+        <img src="{{ p.thumb_poster | relative_url }}" alt=""
+             width="{{ p.thumb_width }}" height="{{ p.thumb_height }}" loading="lazy">
+      {% endif %}
+    </div>
+    <div class="jt-card__body">
+      <h3 class="jt-card__title">{{ p.title }}</h3>
+    </div>
+  </a>
+</li>

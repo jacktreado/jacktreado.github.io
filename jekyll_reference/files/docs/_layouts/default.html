@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="{{ page.description | default: site.description }}" />
+        <meta name="author" content="{{ site.author }}" />
+        <title>{% if page.title and page.layout != 'home' %}{{ page.title }} &middot; {{ site.short_name }}{% else %}{{ site.title }}{% endif %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ '/css/styles.css' | relative_url }}" rel="stylesheet" />
+        <link rel="stylesheet" href="{{ '/css/academicons.css' | relative_url }}" />
+        <!-- Redesign layer: must load AFTER styles.css -->
+        <link rel="stylesheet" href="{{ '/assets/css/redesign.css' | relative_url }}" />
+    </head>
+    <body id="page-top" class="jt">
+        {% include site-nav.html %}
+
+        {{ content }}
+
+        <footer class="footer bg-black small text-white-50">
+            <div class="container text-center px-4 px-lg-5">
+                Built with Start Boostrap <a href="https://github.com/StartBootstrap/startbootstrap-grayscale" target="_blank" rel="noopener noreferrer">Grayscale theme</a>.<br>
+                {{ site.author }} {{ 'now' | date: '%Y' }}
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ '/js/scripts.js' | relative_url }}"></script>
+        <!-- Redesign JS: nav drawer + hover-play cards -->
+        <script defer src="{{ '/assets/js/redesign.js' | relative_url }}"></script>
+    </body>
+</html>

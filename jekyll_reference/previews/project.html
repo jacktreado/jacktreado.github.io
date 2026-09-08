@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mesophyll development — Jack Treado</title>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/redesign.css">
+</head>
+<body class="jt">
+<a class="jt-skip" href="#main">Skip to content</a>
+<header class="jt-nav" data-nav>
+  <div class="jt-nav__inner">
+    <a class="jt-nav__brand" href="hero.html">Jack Treado</a>
+    <nav aria-label="Primary">
+      <ul class="jt-nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.pdf">CV</a></li>
+      </ul>
+    </nav>
+    <button class="jt-nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="jt-drawer">
+      <span class="jt-nav__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+  </div>
+</header>
+
+<div class="jt-scrim-el" data-nav-scrim></div>
+<aside class="jt-drawer" id="jt-drawer" data-nav-drawer data-open="false" aria-hidden="true" aria-label="Site menu">
+  <div class="jt-drawer__head">
+    <span class="jt-drawer__label">Menu</span>
+    <button class="jt-drawer__close" type="button" data-nav-close aria-label="Close menu">&times;</button>
+  </div>
+  <nav aria-label="Primary mobile">
+    <ul class="jt-drawer__links">
+      <li><a href="#about">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="jt-drawer__meta">
+    <a href="cv.pdf">CV</a>
+    <a href="https://github.com/jacktreado">GitHub</a>
+    <a href="https://scholar.google.com/citations?hl=en&amp;user=15DbBbwAAAAJ">Scholar</a>
+  </div>
+</aside>
+<main id="main" class="jt-project jt-project--split">
+  <div class="jt-wrap">
+    <div class="jt-project__body">
+      <div class="jt-project__mediacol">
+        <div class="jt-project__media">
+          <video src="assets/video/mesophyll.mp4" poster="assets/posters/mesophyll.svg"
+                 autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1"></video>
+        </div>
+        <p class="jt-caption">Growth and remodelling of cell walls near void space, deformable particle model.</p>
+      </div>
+      <div class="jt-project__textcol">
+        <a class="jt-back" href="research.html">&larr; All research</a>
+        <div>
+          <p class="jt-project__kicker">2022 &middot; Morphogenesis</p>
+          <h1 class="jt-project__title">Mesophyll development</h1>
+        </div>
+        <div class="jt-prose">
+        <p>The spongy mesophyll, a complex porous tissue found within leaves and flowers, captures atmospheric carbon during photosynthesis and provides important structural stability. But how does this complex tissue develop its vital airspace?</p>
+      <p>Using deformable particles, we show that airspace can emerge from growth and remodelling of cell walls near void space. Cells that begin as a confluent sheet separate along their shared edges, and the resulting void network reproduces the pore-size distributions measured in real leaves.</p>
+      <p>The colorbar in the simulation represents the shape parameter <strong>A = p&sup2; / 4&pi;a</strong>, where <em>p</em> is the cell perimeter and <em>a</em> is the cell area.</p>
+        </div>
+        <ul class="jt-links">
+        <li><a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2022.0602"><span class="jt-links__kind">Paper</span> J. R. Soc. Interface 19, 20220602</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="jt-more">
+      <a href="research.html">&larr; All research</a>
+      <a href="project.html">Next: Clogging of deformable particles &rarr;</a>
+    </div>
+  </div>
+</main>
+<script src="js/redesign.js" defer></script>
+</body>
+</html>

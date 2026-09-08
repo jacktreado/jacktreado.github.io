@@ -1,0 +1,136 @@
+% Source of truth for the Publications page.
+%
+% Edit this file, then regenerate the site's data files with:
+%   python3 scripts/bib_to_data.py
+% That writes docs/_data/publications.yml and docs/_data/commentary.yml,
+% which is what the site actually reads. Commit both this file and the
+% regenerated .yml files together.
+%
+% Notes on this format (see scripts/bib_to_data.py for the exact rules):
+%  - Plain UTF-8 text in field values (e.g. "é") — no LaTeX escapes needed.
+%  - `author` is an "and"-separated list. Each name may be "First Middle Last"
+%    or "Last, First Middle"; already-abbreviated initials ("J. D. Treado")
+%    are left alone, full first names ("John D. Treado") get abbreviated to
+%    initials automatically. The site owner's own name (last name "Treado")
+%    is bolded automatically — no markup needed here.
+%  - Compound/multi-word surnames ("Di Terlizzi", "van der Berg") MUST use
+%    the "Last, First" comma form, e.g. `Di Terlizzi, Ivan` — otherwise the
+%    parser can't tell where the surname starts and will misread part of it
+%    as a middle initial (this is a fundamental ambiguity in plain-text
+%    name parsing generally, not something a smarter heuristic fixes).
+%  - Append a literal `*` right after a name (no space) to mark equal
+%    contribution, e.g. `J. D. Treado* and D. Wang*`.
+%  - `title` is used exactly as written, including trailing punctuation — the
+%    page doesn't add a period for you.
+%  - `@article` entries become Publications; `@misc` entries become the
+%    Commentary list at the bottom of the page (use its `date` field, e.g.
+%    `date = {March 2021}`, instead of `year`).
+%  - `url` is used as-is if present; otherwise falls back to
+%    `https://doi.org/<doi>` if a `doi` field is given.
+
+@article{treado2026hydraulics,
+  author = {John D. Treado and Arthur Boutillon and Frank Jülicher and Otger Campàs},
+  journal = {in preparation},
+  number = {},
+  title = {Hydraulics of Active Tissues},
+  volume = {},
+  year = {2026}
+}
+
+@article{diterlizzi2026memory,
+      title={Passive memory reshapes active persistence}, 
+      author={Di Terlizzi, Ivan and Koehler, Lara and Treado, John D.},
+      year={2026},
+      journal={arXiv:2605.29162},
+      pages={},
+      primaryClass={cond-mat.soft},
+      url={https://arxiv.org/abs/2605.29162}, 
+}
+
+@article{treado2022mesophyll,
+  author  = {J. D. Treado and A. B. Roddy and G. Théroux-Rancourt and C. Ambrose and C. Brodersen and M. D. Shattuck and C. S. O'Hern},
+  title   = {Localized growth drives spongy mesophyll morphogenesis.},
+  journal = {J. R. Soc. Interface},
+  year    = {2022},
+  volume  = {19},
+  pages   = {20220602},
+  url     = {https://royalsocietypublishing.org/doi/full/10.1098/rsif.2022.0602},
+}
+
+@article{cheng2022hopper,
+  author  = {Y. Cheng and J. D. Treado and B. Lonial and P. Habdas and E. R. Weeks and M. D. Shattuck and C. S. O'Hern},
+  title   = {Hopper flows of deformable particles.},
+  journal = {Soft Matter},
+  year    = {2022},
+  volume  = {17},
+  pages   = {8071},
+  url     = {https://pubs.rsc.org/en/content/articlelanding/2022/sm/d2sm01079h},
+}
+
+@article{wang2021jammed3d,
+  author  = {D. Wang and J. D. Treado and A. Boromand and B. Norwick and M. P. Murrell and M. D. Shattuck and C. S. O'Hern},
+  title   = {The structural, vibrational, and mechanical properties of jammed packings of deformable particles in three dimensions.},
+  journal = {Soft Matter},
+  year    = {2021},
+  volume  = {17},
+  pages   = {9901-9915},
+  url     = {https://pubs.rsc.org/en/Content/ArticleLanding/2021/SM/D1SM01228B},
+}
+
+@article{treado2021deformability,
+  author  = {J. D. Treado* and D. Wang* and A. Boromand and M. P. Murrell and M. D. Shattuck and C. S. O'Hern},
+  title   = {Bridging particle deformability and collective response in soft solids.},
+  journal = {Phys. Rev. Materials},
+  year    = {2021},
+  volume  = {5},
+  pages   = {055605},
+  url     = {https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.5.055605},
+}
+
+@article{grigas2020decoys,
+  author  = {A. T. Grigas and Z. Mei and J. D. Treado and Z. A. Levine and L. Regan and C. S. O'Hern},
+  title   = {Using physical features of protein core packing to distinguish real proteins from decoys.},
+  journal = {Protein Science},
+  year    = {2020},
+  volume  = {29},
+  pages   = {1931},
+  url     = {https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3914},
+}
+
+@article{mei2020cores,
+  author  = {Z. Mei* and J. D. Treado* and A. T. Grigas and Z. A. Levine and L. Regan and C. S. O'Hern},
+  title   = {Analyses of protein cores reveal fundamental differences between solution and crystal structures.},
+  journal = {Proteins: Structure, Function, and Bioinformatics},
+  year    = {2020},
+  volume  = {88 (9)},
+  pages   = {1154-1161},
+  url     = {https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25884},
+}
+
+@article{treado2019voids,
+  author  = {J. D. Treado and Z. Mei and L. Regan and C. S. O'Hern},
+  title   = {Void distributions reveal structural link between jammed packings and protein cores.},
+  journal = {Phys. Rev. E},
+  year    = {2019},
+  volume  = {99},
+  pages   = {022416},
+  url     = {https://journals.aps.org/pre/abstract/10.1103/PhysRevE.99.022416},
+}
+
+@article{oi2018zipper,
+  author  = {C. Oi and J. D. Treado and Z. A. Levine and C. S. Lim and K. M. Knecht and Y. Xiong and C. S. O'Hern and L. Regan},
+  title   = {A threonine zipper that mediates protein-protein interactions: Structure and prediction.},
+  journal = {Protein Science},
+  year    = {2018},
+  volume  = {27},
+  pages   = {1969},
+  url     = {https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3505},
+}
+
+@misc{treado2021commentary,
+  author  = {J. D. Treado and D. Wang and Y. Chen and M. D. Shattuck and C. S. O'Hern},
+  title   = {Determining dynamics from statics in living tissue},
+  journal = {Journal Club for Condensed Matter Physics},
+  date    = {March 2021},
+  url     = {https://doi.org/10.36471/JCCM_March_2021_01},
+}

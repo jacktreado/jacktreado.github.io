@@ -1,0 +1,81 @@
+---
+layout: default
+---
+{% comment %}
+  _layouts/project.html — one page per project.
+  Split is the default; set `hero_layout: stacked` for a full-bleed hero.
+{% endcomment %}
+{% assign variant = page.hero_layout | default: 'split' %}
+
+<main id="main" class="jt-project jt-project--{{ variant }}">
+
+  {% if variant == 'stacked' %}
+    <div class="jt-project__hero">
+      {% if page.hero_video %}
+        <video src="{{ page.hero_video | relative_url }}"
+               poster="{{ page.hero_poster | relative_url }}"
+               width="{{ page.hero_width }}" height="{{ page.hero_height }}"
+               autoplay muted loop playsinline preload="metadata"
+               aria-hidden="true" tabindex="-1"></video>
+      {% else %}
+        <img src="{{ page.hero_poster | relative_url }}" alt=""
+             width="{{ page.hero_width }}" height="{{ page.hero_height }}">
+      {% endif %}
+    </div>
+
+    <div class="jt-wrap">
+      <div class="jt-project__head">
+        <a class="jt-back" href="{{ '/research/' | relative_url }}">&larr; All research</a>
+        {% if page.kicker %}<p class="jt-project__kicker">{{ page.kicker }}</p>{% endif %}
+        <h1 class="jt-project__title">{{ page.title }}</h1>
+      </div>
+
+      <div class="jt-project__body">
+        <div class="jt-prose">{{ content }}</div>
+        {% if page.links %}
+          <aside class="jt-project__aside">
+            <p class="jt-aside__label">Links</p>
+            {% include project-links.html links=page.links %}
+          </aside>
+        {% endif %}
+      </div>
+
+      {% include project-more.html %}
+    </div>
+
+  {% else %}
+
+    <div class="jt-wrap">
+      <div class="jt-project__body">
+        <div class="jt-project__mediacol">
+          <div class="jt-project__media">
+            {% if page.hero_video %}
+              <video src="{{ page.hero_video | relative_url }}"
+                     poster="{{ page.hero_poster | relative_url }}"
+                     width="{{ page.hero_width }}" height="{{ page.hero_height }}"
+                     autoplay muted loop playsinline preload="metadata"
+                     aria-hidden="true" tabindex="-1"></video>
+            {% else %}
+              <img src="{{ page.hero_poster | relative_url }}" alt=""
+                   width="{{ page.hero_width }}" height="{{ page.hero_height }}">
+            {% endif %}
+          </div>
+          {% if page.caption %}<p class="jt-caption">{{ page.caption }}</p>{% endif %}
+        </div>
+
+        <div class="jt-project__textcol">
+          <a class="jt-back" href="{{ '/research/' | relative_url }}">&larr; All research</a>
+          <div>
+            {% if page.kicker %}<p class="jt-project__kicker">{{ page.kicker }}</p>{% endif %}
+            <h1 class="jt-project__title">{{ page.title }}</h1>
+          </div>
+          <div class="jt-prose">{{ content }}</div>
+          {% if page.links %}{% include project-links.html links=page.links %}{% endif %}
+        </div>
+      </div>
+
+      {% include project-more.html %}
+    </div>
+
+  {% endif %}
+</main>

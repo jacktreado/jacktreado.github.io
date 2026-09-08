@@ -1,0 +1,9 @@
+<ul class="jt-links">
+  {% for link in include.links %}
+    <li>
+      <a href="{{ link.url }}" {% unless link.url contains site.url %}target="_blank" rel="noopener noreferrer"{% endunless %}>
+        <span class="jt-links__kind">{{ link.kind }}</span> {{ link.label }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

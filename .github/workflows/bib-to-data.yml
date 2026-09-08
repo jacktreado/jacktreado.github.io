@@ -1,0 +1,44 @@
+name: Regenerate publication data from references.bib
+
+# Keeps docs/_data/publications.yml and docs/_data/commentary.yml in sync
+# with references.bib automatically, so nobody has to remember to run
+# `python3 scripts/bib_to_data.py` by hand before pushing. This does NOT
+# change how the site is built/deployed — GitHub Pages still does its own
+# normal Jekyll build of docs/ on every push to main, same as always. This
+# workflow just runs first and, if references.bib changed, commits the
+# regenerated .yml files so that build picks them up.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - references.bib
+      - scripts/bib_to_data.py
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Regenerate docs/_data/*.yml from references.bib
+        run: python3 scripts/bib_to_data.py
+
+      - name: Commit regenerated data files, if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/_data/publications.yml docs/_data/commentary.yml
+          if git diff --cached --quiet; then
+            echo "Nothing changed — publications.yml/commentary.yml already up to date."
+          else
+            git commit -m "Regenerate publication data from references.bib [skip ci]"
+            git push
+          fi
