@@ -5,14 +5,14 @@ kicker: Flow & confinement
 layout: project
 hero_layout: split
 
-hero_video:  /assets/video/dp_clogging.mp4
-hero_poster: /assets/img/posters/clogging.jpg
+hero_video:  /assets/video/dp-clogging.mp4
+hero_poster: /assets/img/posters/dp-clogging.jpg
 hero_width:  420
 hero_height: 344
 caption: Deformable particles clogging in a hopper geometry.
 
-thumb_video:  /assets/video/thumbs/clogging.mp4
-thumb_poster: /assets/img/posters/clogging.jpg
+thumb_video:  /assets/video/thumbs/dp-clogging.mp4
+thumb_poster: /assets/img/posters/dp-clogging.jpg
 thumb_width:  640
 thumb_height: 524
 
