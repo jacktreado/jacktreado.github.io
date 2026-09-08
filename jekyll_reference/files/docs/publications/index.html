@@ -1,0 +1,42 @@
+---
+layout: default
+title: Publications
+nav_section: publications
+permalink: /publications/
+---
+<main id="main" class="publications-section bg-white" style="padding-top:calc(var(--jt-nav-h) + var(--jt-s7))">
+    <div class="container-fluid px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="text-black mb-4">Publications</h1>
+
+                {% assign years = site.data.publications | map: 'year' | uniq | sort | reverse %}
+                {% for year in years %}
+                    <h2 class="text-black mb-3">{{ year }}</h2>
+                    {% for pub in site.data.publications %}
+                        {% if pub.year == year %}
+                            <p class="text-black" align="left">
+                                {{ pub.authors }}, "{{ pub.title }}''
+                                <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer"><i>{{ pub.journal }}</i></a>
+                                {% if pub.volume %}<b>{{ pub.volume }}</b>{% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %} ({{ pub.year }})
+                            </p>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+
+                {% assign commentary = site.data.commentary %}
+                {% if commentary %}
+                    <br>
+                    <br>
+                    <h1 class="text-black mb-4">Commentary</h1>
+                    {% for pub in commentary %}
+                        <p class="text-black" align="left">
+                            {{ pub.authors }}, "{{ pub.title }}"
+                            <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer"><i>{{ pub.journal }}</i></a>, {{ pub.date }}
+                        </p>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</main>

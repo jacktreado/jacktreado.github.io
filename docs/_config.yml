@@ -1,0 +1,31 @@
+# --- site ---------------------------------------------------------------
+title: John D. (Jack) Treado
+short_name: Jack Treado
+author: John D. Treado
+email: treado@pks.mpg.de
+description: Research website
+url: "https://jacktreado.github.io"
+baseurl: ""
+
+github_username: jacktreado
+scholar_url: https://scholar.google.com/citations?hl=en&user=15DbBbwAAAAJ
+
+# --- build --------------------------------------------------------------
+# This file lives at docs/_config.yml. GitHub Pages is set to "main / docs",
+# so docs/ IS the site source — do not set `source:` here.
+collections:
+  projects:
+    output: true
+    permalink: /research/:name/
+
+defaults:
+  - scope: { path: "", type: "projects" }
+    values:
+      layout: project
+      nav_section: research
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

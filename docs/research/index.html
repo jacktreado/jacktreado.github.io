@@ -1,0 +1,19 @@
+---
+layout: default
+title: Research
+nav_section: research
+permalink: /research/
+---
+<main id="main" class="jt-wrap jt-section" style="padding-top:calc(var(--jt-nav-h) + var(--jt-s7))">
+  <div class="jt-section__head">
+    <h1 class="jt-section__title">Research</h1>
+    <p class="jt-section__note">{{ page.note | default: "Coarse-grained models of disordered biological matter." }}</p>
+  </div>
+
+  <ul class="jt-grid jt-grid--roomy">
+    {% assign sorted = site.projects | sort: 'order' %}
+    {% for item in sorted %}
+      {% include project-card.html project=item %}
+    {% endfor %}
+  </ul>
+</main>

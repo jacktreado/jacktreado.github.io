@@ -1,0 +1,12 @@
+{% assign sorted = site.projects | sort: 'order' %}
+{% for p in sorted %}{% if p.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+{% assign next_i = idx | plus: 1 %}
+{% if next_i >= sorted.size %}{% assign next_i = 0 %}{% endif %}
+{% assign next = sorted[next_i] %}
+
+<div class="jt-more">
+  <a href="{{ '/research/' | relative_url }}">&larr; All research</a>
+  {% if next and next.url != page.url %}
+    <a href="{{ next.url | relative_url }}">Next: {{ next.title }} &rarr;</a>
+  {% endif %}
+</div>

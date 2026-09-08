@@ -1,0 +1,54 @@
+{% comment %}
+  _includes/site-nav.html
+  Bar + off-canvas drawer. Links come from _data/nav.yml.
+{% endcomment %}
+<a class="jt-skip" href="#main">Skip to content</a>
+
+<header class="jt-nav" data-nav>
+  <div class="jt-nav__inner">
+    <a class="jt-nav__brand" href="{{ '/' | relative_url }}">{{ site.short_name }}</a>
+
+    <nav aria-label="Primary">
+      <ul class="jt-nav__links">
+        {% for item in site.data.nav %}
+          <li>
+            <a href="{{ item.url | relative_url }}"
+               {% if page.url == item.url or page.nav_section == item.section %}aria-current="page"{% endif %}>{{ item.title }}</a>
+          </li>
+        {% endfor %}
+        <li><a href="{{ '/cv.pdf' | relative_url }}">CV</a></li>
+      </ul>
+    </nav>
+
+    <button class="jt-nav__toggle" type="button" data-nav-toggle
+            aria-expanded="false" aria-controls="jt-drawer">
+      <span class="jt-nav__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+  </div>
+</header>
+
+<div class="jt-scrim-el" data-nav-scrim></div>
+
+<aside class="jt-drawer" id="jt-drawer" data-nav-drawer data-open="false"
+       aria-hidden="true" aria-label="Site menu">
+  <div class="jt-drawer__head">
+    <span class="jt-drawer__label">Menu</span>
+    <button class="jt-drawer__close" type="button" data-nav-close aria-label="Close menu">&times;</button>
+  </div>
+  <nav aria-label="Primary mobile">
+    <ul class="jt-drawer__links">
+      {% for item in site.data.nav %}
+        <li>
+          <a href="{{ item.url | relative_url }}"
+             {% if page.url == item.url or page.nav_section == item.section %}aria-current="page"{% endif %}>{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="jt-drawer__meta">
+    <a href="{{ '/cv.pdf' | relative_url }}">CV</a>
+    <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    <a href="{{ site.scholar_url }}">Scholar</a>
+  </div>
+</aside>

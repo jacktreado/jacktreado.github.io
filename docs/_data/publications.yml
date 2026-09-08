@@ -1,0 +1,77 @@
+# GENERATED FILE — do not hand-edit.
+# Source of truth is /references.bib at the repo root.
+# Regenerate with: python3 scripts/bib_to_data.py
+- year: 2026
+  authors: '<b>J. D. Treado</b>, A. Boutillon, F. Jülicher, and O. Campàs'
+  title: 'Hydraulics of Active Tissues'
+  journal: 'in preparation'
+
+- year: 2026
+  authors: 'I. Di Terlizzi, L. Koehler, and <b>J. D. Treado</b>'
+  title: 'Passive memory reshapes active persistence'
+  journal: 'arXiv:2605.29162'
+  url: 'https://arxiv.org/abs/2605.29162'
+
+- year: 2022
+  authors: '<b>J. D. Treado</b>, A. B. Roddy, G. Théroux-Rancourt, C. Ambrose, C. Brodersen, M. D. Shattuck, and C. S. O''Hern'
+  title: 'Localized growth drives spongy mesophyll morphogenesis.'
+  journal: 'J. R. Soc. Interface'
+  url: 'https://royalsocietypublishing.org/doi/full/10.1098/rsif.2022.0602'
+  volume: '19'
+  pages: '20220602'
+
+- year: 2022
+  authors: 'Y. Cheng, <b>J. D. Treado</b>, B. Lonial, P. Habdas, E. R. Weeks, M. D. Shattuck, and C. S. O''Hern'
+  title: 'Hopper flows of deformable particles.'
+  journal: 'Soft Matter'
+  url: 'https://pubs.rsc.org/en/content/articlelanding/2022/sm/d2sm01079h'
+  volume: '17'
+  pages: '8071'
+
+- year: 2021
+  authors: 'D. Wang, <b>J. D. Treado</b>, A. Boromand, B. Norwick, M. P. Murrell, M. D. Shattuck, and C. S. O''Hern'
+  title: 'The structural, vibrational, and mechanical properties of jammed packings of deformable particles in three dimensions.'
+  journal: 'Soft Matter'
+  url: 'https://pubs.rsc.org/en/Content/ArticleLanding/2021/SM/D1SM01228B'
+  volume: '17'
+  pages: '9901-9915'
+
+- year: 2021
+  authors: '<b>J. D. Treado</b>*, D. Wang*, A. Boromand, M. P. Murrell, M. D. Shattuck, and C. S. O''Hern'
+  title: 'Bridging particle deformability and collective response in soft solids.'
+  journal: 'Phys. Rev. Materials'
+  url: 'https://journals.aps.org/prmaterials/abstract/10.1103/PhysRevMaterials.5.055605'
+  volume: '5'
+  pages: '055605'
+
+- year: 2020
+  authors: 'A. T. Grigas, Z. Mei, <b>J. D. Treado</b>, Z. A. Levine, L. Regan, and C. S. O''Hern'
+  title: 'Using physical features of protein core packing to distinguish real proteins from decoys.'
+  journal: 'Protein Science'
+  url: 'https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3914'
+  volume: '29'
+  pages: '1931'
+
+- year: 2020
+  authors: 'Z. Mei*, <b>J. D. Treado</b>*, A. T. Grigas, Z. A. Levine, L. Regan, and C. S. O''Hern'
+  title: 'Analyses of protein cores reveal fundamental differences between solution and crystal structures.'
+  journal: 'Proteins: Structure, Function, and Bioinformatics'
+  url: 'https://onlinelibrary.wiley.com/doi/full/10.1002/prot.25884'
+  volume: '88 (9)'
+  pages: '1154-1161'
+
+- year: 2019
+  authors: '<b>J. D. Treado</b>, Z. Mei, L. Regan, and C. S. O''Hern'
+  title: 'Void distributions reveal structural link between jammed packings and protein cores.'
+  journal: 'Phys. Rev. E'
+  url: 'https://journals.aps.org/pre/abstract/10.1103/PhysRevE.99.022416'
+  volume: '99'
+  pages: '022416'
+
+- year: 2018
+  authors: 'C. Oi, <b>J. D. Treado</b>, Z. A. Levine, C. S. Lim, K. M. Knecht, Y. Xiong, C. S. O''Hern, and L. Regan'
+  title: 'A threonine zipper that mediates protein-protein interactions: Structure and prediction.'
+  journal: 'Protein Science'
+  url: 'https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3505'
+  volume: '27'
+  pages: '1969'
