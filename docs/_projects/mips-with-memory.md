@@ -5,10 +5,11 @@ kicker: 2026 · Active Matter
 layout: project
 hero_layout: split            # or: stacked, for a full-bleed hero
 
-hero_poster: /assets/img/posters/mips.png
+hero_poster: /assets/img/posters/movie-demo-speed.jpg
+hero_video:  /assets/video/movie-demo-speed.mp4
 hero_width:  1120
 hero_height: 840
-caption: Motility-induced Phase Separation (MIPS) with passive memory.
+caption: Motility-induced Phase Separation (MIPS) can be surpressed in the presence of memory.
 
 thumb_poster: /assets/img/posters/mips.png
 thumb_width:  640

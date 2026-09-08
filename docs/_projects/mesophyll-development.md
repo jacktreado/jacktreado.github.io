@@ -9,7 +9,7 @@ hero_video:  /assets/video/meso_free.mp4
 hero_poster: /assets/img/posters/mesophyll.jpg
 hero_width:  1120
 hero_height: 840
-caption: Growth and remodelling of cell walls near void space, deformable particle model.
+caption: Growth and remodelling of cell walls drive simulated spongy mesophyll morphogenesis.
 
 thumb_video:  /assets/video/thumbs/mesophyll.mp4
 thumb_poster: /assets/img/posters/mesophyll.jpg
