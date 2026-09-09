@@ -5,11 +5,11 @@ kicker: 2026 · Active Matter
 layout: project
 hero_layout: split            # or: stacked, for a full-bleed hero
 
-hero_poster: /assets/img/posters/movie-demo-speed.jpg
-hero_video:  /assets/video/movie-demo-speed.mp4
+hero_poster: /assets/img/posters/movie-demo-density.jpg
+hero_video:  /assets/video/movie-demo-density.mp4
 hero_width:  1120
 hero_height: 840
-caption: Motility-induced Phase Separation (MIPS) can be surpressed in the presence of memory.
+caption: Motility-induced Phase Separation (MIPS) can be surpressed in the presence of memory. Particle clusters usually form at this level of activity, but by making timescale of environmental memory \(\tau_m\) similar to the persistence of particle activity \(\tau_a\), we show that cluster formation is frustrated. Here, particle color denotes local density. 
 
 thumb_poster: /assets/img/posters/mips.png
 thumb_width:  640

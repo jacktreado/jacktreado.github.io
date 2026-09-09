@@ -9,7 +9,7 @@ hero_poster: /assets/img/posters/os-psweep-2025-11-05-n64-shock-adh-loop-22-void
 hero_video:  /assets/video/os-psweep-2025-11-05-n64-shock-adh-loop-22-void.mp4
 hero_width:  1120
 hero_height: 840
-caption: Osmotic shocks simulation.
+caption: Simulation of tissue exposed to osmotic shock.
 
 # thumb_video:  /assets/video/thumbs/os-psweep-2025-11-05-n64-shock-adh-loop-22-void.mp4
 thumb_poster: /assets/img/posters/hydraulics.png
