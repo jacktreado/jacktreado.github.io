@@ -1,5 +1,5 @@
 ---
-title: Hydraulics of Active Tissues
+title: Hydraulics of active tissues
 order: 1
 kicker: 2026 · Biological Physics
 layout: project
