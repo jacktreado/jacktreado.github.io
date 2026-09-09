@@ -9,7 +9,8 @@ hero_video:  /assets/video/meso_free.mp4
 hero_poster: /assets/img/posters/mesophyll.jpg
 hero_width:  1120
 hero_height: 840
-caption: Growth and remodelling of cell walls drive simulated spongy mesophyll morphogenesis.
+caption: Growth and remodelling of cell walls drive simulated spongy mesophyll morphogenesis. The colorbar in the simulation represents the shape parameter \(\mathcal{A} = p^2 / (4\pi a)\), where \(p\) is the cell perimeter and \(a\) is the cell area.
+
 
 thumb_video:  /assets/video/thumbs/mesophyll.mp4
 thumb_poster: /assets/img/posters/mesophyll.jpg
@@ -28,7 +29,3 @@ structural stability. But how does this complex tissue develop its vital airspac
 
 Using deformable particles, we show that airspace can emerge from growth and
 remodelling of cell walls near void space.
-
-The colorbar in the simulation represents the shape parameter
-\\( {\\cal A} = p^2 / 4\\pi a \\), where \\(p\\) is the cell perimeter and
-\\(a\\) is the cell area.
