@@ -1,33 +1,35 @@
 ---
-title: Hydraulics of active tissues
+title: Flow, dynamics and active fracture in hydraulic multicellular systems
 order: 1
 kicker: 2026 · Biological Physics
 layout: project
 hero_layout: split            # or: stacked, for a full-bleed hero
 
-hero_poster: /assets/img/posters/os-psweep-2025-11-05-n64-shock-adh-loop-22-void.jpg
-hero_video:  /assets/video/os-psweep-2025-11-05-n64-shock-adh-loop-22-void.mp4
+hero_poster: /assets/img/posters/fracture.jpg
+hero_video:  /assets/video/fracture.mp4
 hero_width:  1120
 hero_height: 840
-caption: Simulation of tissue exposed to osmotic shock.
+caption: Emergence of small lumina in an active tissue. 
 
-# thumb_video:  /assets/video/thumbs/os-psweep-2025-11-05-n64-shock-adh-loop-22-void.mp4
-thumb_poster: /assets/img/posters/hydraulics.png
+thumb_poster: /assets/img/posters/fracture.jpg
+thumb_video:  /assets/video/fracture.mp4
 thumb_width:  640
 thumb_height: 480
 
 links:
   - kind: Paper
-    label: In Preparation
+    label: arXiv:2609.21021
+    url: https://arxiv.org/abs/2609.21021
 ---
 
 From interstitial space to luminal cavities, fluid pressure and flow can remodel, reshape and even
-redefine a biological tissue. These hydraulic forces both govern and react to mechanical interactions
-between cells, but difficulties of measuring flows at cellular scales make understanding tissue hy-
-draulics challenging. Here, we demonstrate a theoretical approach that models cellular mechanics
-and hydraulics simultaneously, and find that fluid flux can drastically alter tissue behavior. We
-show that perturbations to a tissue’s permeability in the presence of active noise can decrease cell
-mobility to the point of fracture, where a hydraulic ratchet drives fluid out of cells and nucleates
-microlumina. We find evidence that part of our theoretical results, that fluid permeability affects
-tissue dynamics, explains experimental observations of cell motion in zebrafish embryos injected
-with a thickening agent, indicating that hydraulics may generally affect any multicellular system.
+redefine a biological tissue. Fluids can either govern or react to mechanical interactions between cells.
+However, measuring flows at cellular scales is difficult, which makes it challenging to understand
+tissue hydraulics. Here, we develop a theoretical approach that captures cellular mechanics and fluid
+flow in one framework. We find that hydraulics can drastically influence tissue behavior. Hydraulic
+coupling between cell shape and size governs a tissue’s response to osmotic shock, while tuning a
+tissue’s permeabilities can channel fluid either between or across cell membranes. In active tissues,
+hydraulics can suppress cell mobility to the point of fracture, where we discover a hydraulic ratchet
+that drives fluid out of cells to generate small luminal spaces. We find experimental evidence that
+hydraulics can suppress cell motion in early stage zebrafish embryos injected with a thickening agent,
+which indicates that hydraulics may generally govern the behaviors of many multicellular systems.

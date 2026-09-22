@@ -3,8 +3,9 @@
 # Regenerate with: python3 scripts/bib_to_data.py
 - year: 2026
   authors: '<b>J. D. Treado</b>, A. Boutillon, F. Jülicher, and O. Campàs'
-  title: 'Hydraulics of Active Tissues'
-  journal: 'in preparation'
+  title: '{Flow, dynamics and active fracture in hydraulic multicellular systems}'
+  journal: 'arXiv'
+  url: 'https://doi.org/10.48550/arxiv.2609.21021'
 
 - year: 2026
   authors: '<b>J. D. Treado</b>*, I. Di Terlizzi*, and L. Koehler*'
